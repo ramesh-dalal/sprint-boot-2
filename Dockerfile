@@ -8,4 +8,4 @@ WORKDIR /usr/app/
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "spring-boot-docker-app.jar"]
+ENTRYPOINT ["java", "-jar", "spring-boot.jar"]
