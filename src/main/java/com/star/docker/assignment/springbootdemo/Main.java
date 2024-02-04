@@ -2,12 +2,17 @@ package com.star.docker.assignment.springbootdemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
-public class SpringbootDemoApplication {
-
+public class Main {
+	
 	public static void main(String[] args) {
-		SpringApplication.run(SpringbootDemoApplication.class, args);
+		
+		ApplicationContext con = SpringApplication.run(Main.class, args);
+		
+		
+		
 	}
 
 }
