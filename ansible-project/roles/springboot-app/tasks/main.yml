@@ -1,0 +1,17 @@
+---
+- name: Install Docker
+  become: true
+  apt:
+    name: docker.io
+    state: present
+
+- name: Create Unix user
+  become: true
+  user:
+    name: demo
+    state: present
+    
+
+- name: Deploy Spring Boot App
+  become: true
+  command: docker run --name springboot-project -td -p 9010:9010 rameshdalal/springboot-demo:3.0

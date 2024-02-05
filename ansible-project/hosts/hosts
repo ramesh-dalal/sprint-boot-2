@@ -1,0 +1,2 @@
+[myhosts]
+172.31.42.69 ansible_ssh_user=ansible
